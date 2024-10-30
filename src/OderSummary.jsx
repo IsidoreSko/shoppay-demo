@@ -4,10 +4,10 @@ import { Input } from "./components/ui/input";
 
 export const ItemImageCard = ({ quantity = 0, imageUrl }) => {
   return (
-    <div className="relative size-16 rounded-md border border-zinc-100">
+    <div className="relative border rounded-md size-16 border-zinc-100 ">
       <img src={imageUrl} alt="ac adapter" className="size-full" />
       {quantity ? (
-        <span className="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-full  bg-black/50 text-xs text-white">
+        <span className="absolute flex items-center justify-center text-xs text-white rounded-full -right-2 -top-2 size-5 bg-black/50">
           1
         </span>
       ) : null}
@@ -20,9 +20,9 @@ export const OrderSummary = () => {
     <div className="flex flex-col gap-4">
       <div className="flex items-center gap-4">
         <ItemImageCard imageUrl="/ac-adapter.webp" quantity={1} />
-        {/* <div className="relative size-16 rounded-md border border-zinc-300 p-1">
+        {/* <div className="relative p-1 border rounded-md size-16 border-zinc-300">
           <img src="/ac-adapter.webp" alt="ac adapter" className="size-full" />
-          <span className="absolute -right-2 -top-2 flex size-5 items-center justify-center rounded-full  bg-black/50 text-xs text-white">
+          <span className="absolute flex items-center justify-center text-xs text-white rounded-full -right-2 -top-2 size-5 bg-black/50">
             1
           </span>
         </div> */}
